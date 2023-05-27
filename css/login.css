@@ -1,0 +1,75 @@
+.img-bg-login {
+background-image: url(../img/bg-memory2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.login__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.login__header h1 {
+    color: #204e66;
+    font-size: 3em;
+    animation: jackInTheBox;
+    animation-duration: 2s;
+}
+
+.login__input {
+    border: 2px solid #333;
+    border-radius: 50px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    animation: zoomIn;
+    animation-duration: 2.5s;
+}
+
+.login__button {
+    background-color: #204e66;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 5px;
+    width: 100%;
+    animation: backInUp;
+    animation-duration: 2s;
+}
+
+.login__button:hover {
+    background-color: #14303e;
+    transition: 0.3s;
+}
+
+.login__button:active {
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+
+
+.login__button:disabled {
+    background-color: #eee;
+    border: 2px solid #969595;
+    color: #aaa;
+    cursor: auto;
+}

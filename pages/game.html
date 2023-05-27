@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/game.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="shortcut icon" href="../img/lion.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>Memory Game</title>
+    </head>
+    <body>
+        <audio src="../audio/trilha.mp3" preload="metadata" id="audioTrilha"></audio>
+        <audio src="../audio/Abrir-carta-editado.mp3" preload="metadata" id="audioCartaAbrindo"></audio>
+        <audio src="../audio/ganhar-jogo-editado.mp3" preload="metadata" id="audioVitoria"></audio>
+        <audio src="../audio/perder-jogo-editado.mp3" preload="metadata" id="audioDerrota"></audio>
+
+
+        <main>
+           
+            <header>
+                <h1>Venha se aventurar na floresta</h1>
+                <span class="player"></span>
+                <span>Tempo: <span class="timer">00</span></span>
+            </header>
+
+            <div class="grid"></div>
+        </main>
+
+        <script defer src="../js/game.js"></script>
+    </body>
+</html>

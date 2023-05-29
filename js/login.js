@@ -1,6 +1,21 @@
 const input = document.querySelector('.login__input');
 const button = document.querySelector('.login__button');
 const form = document.querySelector('.login-form');
+const tutorial = document.getElementById('tutorialVideo');
+const buttonTutorial = document.getElementById('tutorialButton');
+
+const showTutorial = () => {  
+  let video = tutorial.getElementsByTagName('video')[0]
+
+  if (tutorial.style.display === "none") {    
+    tutorial.style.display = "flex"
+    video.style.display = "block"
+  } else {
+    tutorial.style.display = "none"  
+    video.style.display = "none" 
+    video.pause()
+  } 
+}
 
 const validateInput = ({ target }) => {
   if (target.value.length > 3) {
@@ -20,4 +35,5 @@ const handleSubmit = (event) => {
 
 input.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);
-
+buttonTutorial.addEventListener('click', showTutorial);
+tutorial.addEventListener('focusout', showTutorial);

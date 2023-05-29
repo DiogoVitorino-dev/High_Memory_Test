@@ -120,11 +120,11 @@ const startTimer = () => {
     document.getElementById("audioTrilha").play();
 
     // CheckLoser
-    if (elapsedTime >= 11) {
+    if (elapsedTime >= 31) {
       clearInterval(this.loop);
       document.getElementById("audioTrilha").pause();
       document.getElementById("audioDerrota").play();
-      alert("Tempo esgotado! Você perdeu o jogo.");
+      alert("Tempo esgotado! Você perdeu o jogo... Gostaria de tenta novamente?");
 
       clearInterval(this.loop);
       grid.innerHTML = '';
@@ -137,6 +137,25 @@ const startTimer = () => {
     }
   }, 1000);
 };
+
+// Reset Game
+const restartButton = document.getElementById('restartButton');
+
+
+const restartGame = () => {
+  clearInterval(this.loop);
+  grid.innerHTML = '';
+  timer.innerHTML = '0';
+  firstCard = '';
+  secondCard = '';
+
+  // Coloque aqui o código para redefinir outras variáveis ou estado do jogo
+
+  startTimer();
+  loadGame();
+};
+restartButton.addEventListener('click', restartGame);
+
 
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');

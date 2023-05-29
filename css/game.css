@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url("../img/bg-memory.png");
+    background-image: url("../img/bg-memory-game-edit.png");
     background-size: cover;
     min-height: 100vh;
     align-items: center;
@@ -80,7 +80,7 @@ header {
 }
 
 .back {
-    background-image: url("../img/carta-verso.png");
+    background-image: url("../img/carta-verso-edit.png");
     backface-visibility: hidden;
 }
 
@@ -93,7 +93,38 @@ header {
     opacity: 0.5;
 }
 
-/* Video */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+}
+
+.box-name-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.container button {
+    background-color: #f4f4f4;
+    font-size: 0.8em;
+    color: #006428;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #dedede;
+    transition: 0.3s;
+    transform: scale(0.95);
+}
+
+.container button:active {
+    transform: scale(0.95);
+    transition: 0.3s;
+}
 
 @media screen and (max-width: 920px) {
     .grid {

@@ -10,6 +10,7 @@ const showTutorial = () => {
   if (tutorial.style.display === "none") {    
     tutorial.style.display = "flex"
     video.style.display = "block"
+    video.focus()
   } else {
     tutorial.style.display = "none"  
     video.style.display = "none" 

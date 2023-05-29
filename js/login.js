@@ -6,6 +6,7 @@ const buttonTutorial = document.getElementById('tutorialButton');
 
 const showTutorial = () => {  
   let video = tutorial.getElementsByTagName('video')[0]
+  video.focus()
 
   if (tutorial.style.display === "none") {    
     tutorial.style.display = "flex"

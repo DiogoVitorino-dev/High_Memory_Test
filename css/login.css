@@ -80,24 +80,16 @@ background-repeat: no-repeat;
     height: 100%;
     position: absolute; 
     z-index: 10;   
-<<<<<<< HEAD
     background-color: rgba(20, 48, 62, 0.8);
-=======
-    background-color: rgba(0, 0, 0, 0.8);
->>>>>>> b4603db7e0f105797e435ff121b5f9c475bc82f5
     backdrop-filter: blur(2px);
     justify-content: center;
     align-items: center;    
 }
 
 .tutorial video{    
-<<<<<<< HEAD
     width: 70%;      
     border: 2px solid #f4f4f4;
     border-radius: 8px; 
     animation: zoomIn;  
     animation-duration: 1s;
-=======
-    width: 80%;         
->>>>>>> b4603db7e0f105797e435ff121b5f9c475bc82f5
 }

@@ -1,6 +1,6 @@
 # Jogo da Memória
 
-- Projeto academico para a disciplina de Sistema Multimídia.
+- Projeto acadêmico para a disciplina de Sistema Multimídia.
 - Foi realizado em equipe.
 - O Jogo criado pelo [Manual do Dev](https://github.com/manualdodev/memory-game) e foi adaptado para se adequar aos requisitos do projeto da disciplina.
 
